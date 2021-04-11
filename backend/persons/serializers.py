@@ -1,12 +1,11 @@
 from django.contrib.auth import get_user_model
 from rest_framework import serializers
 
+from persons.models import Person
 
-User = get_user_model()
 
-
-class UserSerializer(serializers.ModelSerializer):
+class PersonSerializer(serializers.ModelSerializer):
     class Meta:
-        model = User
+        model = Person
         fields = '__all__'
 

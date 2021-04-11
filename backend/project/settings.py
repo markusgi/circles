@@ -140,6 +140,4 @@ SIMPLE_JWT = {
     'REFRESH_TOKEN_LIFETIME': timedelta(days=5)
 }
 
-AUTH_USER_MODEL = 'persons.User'
-
 CORS_ALLOW_ALL_ORIGINS = True

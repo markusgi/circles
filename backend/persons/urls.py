@@ -1,7 +1,8 @@
 from django.urls import path
 
-from persons.views import ListPersonAPIView
+from persons.views import ListPersonsAPIView, RetrieveUpdateDestroyPersonAPIView
 
 urlpatterns = [
-    path('me/', ListPersonAPIView.as_view()),
+    path('list/', ListPersonsAPIView.as_view()),
+    path('<int:id>/', RetrieveUpdateDestroyPersonAPIView.as_view()),
 ]

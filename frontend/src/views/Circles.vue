@@ -1,12 +1,14 @@
 <template>
     <v-card>
 
-        <p>Circles</p>
+        <h1>Circles</h1>
+        <Cgraph :circles="circles"/>
     </v-card>
     
 </template>
 
 <script>
+import Cgraph from '../components/Cgraph';
 export default {
 
   name: "Circles",
@@ -35,6 +37,9 @@ export default {
       this.circles = data
       console.log(data)
     }
-    
-}}
+    },
+    components: {
+        Cgraph
+    }
+}
 </script>

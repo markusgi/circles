@@ -24,7 +24,6 @@ make up
 ```
 The backend should now be accessible via
 
-```
 Backend:  localhost:8000/backend/api
 (3) enter the container 
 ```bash

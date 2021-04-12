@@ -14,6 +14,9 @@ The current tech stack of this project is:
 
 # Setup project
 (1) download docker image
+```bash
+docker build -t challenge-backend:latest .
+```
 
 (2) start the project:
 ```bash
@@ -38,9 +41,8 @@ python manage.py import_persons_from _csv employees.csv
 ```
 
 (4) run frontend
-´´´bash
+```bash
 cd frontend
 npm install
 npm run serve
-
-´´´
+```

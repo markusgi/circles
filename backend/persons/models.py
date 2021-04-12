@@ -38,6 +38,8 @@ class Person(models.Model):
         max_length=60,
         blank=True,
     )
+    # das wäre wahrscheinlich foreign Key
+    # dann beim import mit Person.objects.get_or_create(...)
     vorgesetzter = models.CharField(
         verbose_name='vorgesetzter',
         max_length=60,

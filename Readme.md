@@ -40,6 +40,7 @@ python manage.py import_persons_from _csv employees.csv
 (4) run frontend
 ´´´bash
 cd frontend
+npm install
 npm run serve
 
 ´´´

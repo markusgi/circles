@@ -41,12 +41,13 @@
 
 export default {
 
-  name: "App",
+  name: "Login",
   data() {
     return {
       username: "",
       password: "",
       showPassword: false,
+      loading: false
     };
   },
   methods: {
